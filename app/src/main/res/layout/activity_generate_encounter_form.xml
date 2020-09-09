@@ -1,20 +1,17 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/linearLayout"
+    tools:context=".GenerateEncounterFormActivity"
     android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    tools:context=".GenerateEncounterFormActivity">
+    android:layout_height="wrap_content">
 
     <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
+        android:id="@+id/form_layout"
+        android:layout_margin="16dp"
         android:orientation="vertical"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="1.0"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent">
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
 
         <TextView
             android:id="@+id/textView"
@@ -22,58 +19,61 @@
             android:layout_height="wrap_content"
             android:text="@string/number_player_prompt"
             android:textSize="20sp"
-            android:textStyle="bold"/>
-        
+            android:textStyle="bold" />
+
         <Spinner
             android:id="@+id/listeLevel"
-            android:layout_width="match_parent"
+            android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:entries="@array/players_level"
-            >
+            android:layout_marginTop="8dp"
+            android:entries="@array/players_level">
 
         </Spinner>
+
         <TextView
             android:id="@+id/TextLevel"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
             android:text="@string/level_prompt"
             android:textSize="20sp"
-            android:textStyle="bold"/>
+            android:textStyle="bold" />
+
         <Spinner
             android:id="@+id/listeNombreJoueur"
-            android:layout_width="match_parent"
+            android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:entries="@array/number_player"
-            >
+            android:layout_marginTop="8dp"
+            android:entries="@array/number_player">
 
         </Spinner>
 
-        <LinearLayout
-            android:gravity="end"
-            style="?android:attr/buttonBarStyle"
-            android:layout_width="match_parent"
+    </LinearLayout>
+
+
+    <LinearLayout
+        style="?android:attr/buttonBarStyle"
+        android:layout_below="@+id/form_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="end"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/btnCancel"
+            style="?android:attr/buttonBarButtonStyle"
+            android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:orientation="horizontal">
+            android:layout_margin="5dp"
+            android:text="@string/Cancel_btn" />
 
-            <Button
-                style="?android:attr/buttonBarButtonStyle"
-                android:id="@+id/btnCancel"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="@string/Cancel_btn"
-                android:layout_margin="5dp"/>
-
-            <Button
-                style="?android:attr/buttonBarButtonStyle"
-                android:id="@+id/btnGenerate"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="@string/generate"
-                android:layout_margin="5dp"/>
-
-        </LinearLayout>
-
-
+        <Button
+            android:id="@+id/btnGenerate"
+            style="?android:attr/buttonBarButtonStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:text="@string/generate" />
 
     </LinearLayout>
-</androidx.constraintlayout.widget.ConstraintLayout>
+</RelativeLayout>

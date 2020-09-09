@@ -1,5 +1,6 @@
 package be.hevelaska.pdm;
 
+import android.content.Intent;
 import android.os.Bundle;
 
 import androidx.appcompat.app.AppCompatActivity;
@@ -17,6 +18,12 @@ public class GenerateEncounterFormActivity extends AppCompatActivity {
         setContentView(binding.getRoot());
 
         binding.btnCancel.setOnClickListener(view -> finish());
+        binding.btnGenerate.setOnClickListener(view -> {
+            Intent intent = new Intent(this,GenerateEncounterActivity.class);
+            intent.putExtra("numberPlayers",binding.listeNombreJoueur.getSelectedItemPosition()+1);
+            intent.putExtra("averageLevel",binding.listeLevel.getSelectedItemPosition()+1);
+            startActivity(intent);
+        });
     }
 
 

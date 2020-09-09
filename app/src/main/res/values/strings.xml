@@ -12,6 +12,7 @@
     <string name="name_monster">name monster</string>
     <string name="level_prompt">Choose a level</string>
     <string name="Cancel_btn">Cancel</string>
+    <string name="amount_of_monster">1×</string>
     <string-array name="players_level">
         <item>1</item>
         <item>2</item>
