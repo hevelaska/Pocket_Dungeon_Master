@@ -1,0 +1,207 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MonsterActivity">
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:id="@+id/appBarLayout"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar">
+
+        <com.google.android.material.appbar.MaterialToolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            app:title="@string/app_name"
+            style="@style/Widget.MaterialComponents.Toolbar.Primary"/>
+
+    </com.google.android.material.appbar.AppBarLayout>
+
+    <ScrollView
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/appBarLayout">
+
+        <LinearLayout
+            android:padding="8dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <ImageView
+                android:id="@+id/monsterPicture"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:contentDescription="@string/monster_picture_description" />
+
+            <TextView
+                android:id="@+id/monsterName"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="8dp"
+                android:padding="4dp"
+                android:drawablePadding="16dp"
+                android:textSize="32sp"
+                android:textStyle="bold"/>
+
+            <com.lockwood.compound.CompoundTextView
+                android:id="@+id/description"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/monster_description"
+                app:drawableStart="@drawable/ic_description"
+                android:layout_margin="8dp"
+                android:padding="4dp"
+                app:drawablePadding="16dp"
+                android:textSize="19sp"
+                app:drawableGravity="top"/>
+
+            <com.lockwood.compound.CompoundTextView
+                android:id="@+id/monsterLevel"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="8dp"
+                android:padding="4dp"
+                app:drawablePadding="16dp"
+                android:textSize="19sp"
+                app:drawableStart="@drawable/ic_level_light"
+                app:drawableGravity="top"/>
+
+            <com.lockwood.compound.CompoundTextView
+                android:id="@+id/monsterMotive"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:drawableStart="@drawable/ic_motive"
+                android:layout_margin="8dp"
+                android:padding="4dp"
+                app:drawablePadding="16dp"
+                android:textSize="19sp"
+                app:drawableGravity="top"/>
+
+
+
+            <com.lockwood.compound.CompoundTextView
+                android:id="@+id/monsterEnvironment"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:drawableStart="@drawable/ic_environment_light"
+                android:layout_margin="8dp"
+                android:padding="4dp"
+                app:drawablePadding="16dp"
+                android:textSize="19sp"
+                app:drawableGravity="top"/>
+
+            <com.lockwood.compound.CompoundTextView
+                android:id="@+id/monsterHealth"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:drawableStart="@drawable/ic_health_light"
+                android:layout_margin="8dp"
+                android:padding="4dp"
+                app:drawablePadding="16dp"
+                android:textSize="19sp"
+                app:drawableGravity="top"/>
+
+            <com.lockwood.compound.CompoundTextView
+                android:id="@+id/monsterDamages"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:drawableStart="@drawable/ic_sword"
+                android:layout_margin="8dp"
+                android:padding="4dp"
+                app:drawablePadding="16dp"
+                android:textSize="19sp"
+                app:drawableGravity="top"/>
+
+            <com.lockwood.compound.CompoundTextView
+                android:id="@+id/monsterArmor"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:drawableStart="@drawable/ic_shield"
+                android:layout_margin="8dp"
+                android:padding="4dp"
+                app:drawablePadding="16dp"
+                android:textSize="19sp"
+                app:drawableGravity="top"/>
+
+            <com.lockwood.compound.CompoundTextView
+                android:id="@+id/monsterMovement"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:drawableStart="@drawable/ic_movement_type"
+                android:layout_margin="8dp"
+                android:padding="4dp"
+                app:drawablePadding="16dp"
+                android:textSize="19sp"
+                app:drawableGravity="top"/>
+
+            <com.lockwood.compound.CompoundTextView
+                android:id="@+id/monsterModifications"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:drawableStart="@drawable/ic_modification"
+                android:layout_margin="8dp"
+                android:padding="4dp"
+                app:drawablePadding="16dp"
+                android:textSize="19sp"
+                app:drawableGravity="top"/>
+
+            <com.lockwood.compound.CompoundTextView
+                android:id="@+id/monsterCombat"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:drawableStart="@drawable/ic_sword_cross"
+                android:layout_margin="8dp"
+                android:padding="4dp"
+                app:drawablePadding="16dp"
+                android:textSize="19sp"
+                app:drawableGravity="top"/>
+
+            <com.lockwood.compound.CompoundTextView
+                android:id="@+id/monsterInteraction"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:drawableStart="@drawable/ic_interaction_light"
+                android:layout_margin="8dp"
+                android:padding="4dp"
+                app:drawablePadding="16dp"
+                android:textSize="19sp"
+                app:drawableGravity="top"/>
+
+            <com.lockwood.compound.CompoundTextView
+                android:id="@+id/monsterUse"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:drawableStart="@drawable/ic_use"
+                android:layout_margin="8dp"
+                android:padding="4dp"
+                app:drawablePadding="16dp"
+                android:textSize="19sp"
+                app:drawableGravity="top"/>
+
+            <com.lockwood.compound.CompoundTextView
+                android:id="@+id/monsterLoot"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:drawableStart="@drawable/ic_loot"
+                android:layout_margin="8dp"
+                android:padding="4dp"
+                app:drawablePadding="16dp"
+                android:textSize="19sp"
+                app:drawableGravity="top"/>
+
+        </LinearLayout>
+    </ScrollView>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

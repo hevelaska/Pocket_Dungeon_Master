@@ -1,0 +1,32 @@
+<resources>
+    <string name="app_name">Pocket Dungeon Master</string>
+    <string name="tab_monsters">Monsters</string>
+    <string name="search_monster">Search monsters</string>
+    <string name="tab_treasure">Treasure</string>
+    <string name="search">Search</string>
+    <string name="generate">Generate</string>
+    <string name="add">add</string>
+    <string name="monster_picture_description">monster pictures description</string>
+    <string name="monster_description"> monster description</string>
+    <string name="default_level">1</string>
+    <string name="name_monster">name monster</string>
+    <string name="level_prompt">Choose a level</string>
+    <string name="Cancel_btn">Cancel</string>
+    <string-array name="players_level">
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+        <item>4</item>
+        <item>5</item>
+        <item>6</item>
+    </string-array>
+    <string name="number_player_prompt">Number of players</string>
+    <string-array name="number_player">
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+        <item>4</item>
+        <item>5</item>
+        <item>6</item>
+    </string-array>
+</resources>
