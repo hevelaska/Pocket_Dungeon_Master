@@ -1,14 +1,10 @@
 package be.hevelaska.pdm;
 
 import android.os.Bundle;
-import android.os.PersistableBundle;
 
-import androidx.annotation.Nullable;
 import androidx.appcompat.app.AppCompatActivity;
-import androidx.fragment.app.DialogFragment;
 
 import be.hevelaska.pdm.databinding.ActivityGenerateEncounterFormBinding;
-import be.hevelaska.pdm.databinding.ActivityMonsterBinding;
 
 public class GenerateEncounterFormActivity extends AppCompatActivity {
 
@@ -20,5 +16,8 @@ public class GenerateEncounterFormActivity extends AppCompatActivity {
         binding = ActivityGenerateEncounterFormBinding.inflate(getLayoutInflater());
         setContentView(binding.getRoot());
 
+        binding.btnCancel.setOnClickListener(view -> finish());
     }
+
+
 }

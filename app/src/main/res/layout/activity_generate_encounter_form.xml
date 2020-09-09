@@ -20,22 +20,31 @@
             android:id="@+id/textView"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="TextView" />
+            android:text="@string/number_player_prompt"
+            android:textSize="20sp"
+            android:textStyle="bold"/>
         
         <Spinner
             android:id="@+id/listeLevel"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:entries="@array/players_level"
-            android:prompt="@string/level_prompt">
+            >
 
         </Spinner>
+        <TextView
+            android:id="@+id/TextLevel"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/level_prompt"
+            android:textSize="20sp"
+            android:textStyle="bold"/>
         <Spinner
             android:id="@+id/listeNombreJoueur"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:entries="@array/number_player"
-            android:prompt="@string/number_player_prompt">
+            >
 
         </Spinner>
 
