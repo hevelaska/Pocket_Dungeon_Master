@@ -1,0 +1,41 @@
+[
+  {
+    "name" : "Activateur à détection de mouvement",
+    "type" : "ANOETIQUES",
+    "level" : "1d6 + 1",
+    "utilisable" : "petit nodule en synth",
+    "effet" : "Quand on le fixe sur un autre cypher ou sur un artefact, l'activateur à mouvement active cet appareil si quoi que ce soit de plus gros qu'un petit chien passe à distance immédiate. Une fois activé, il est impossible de le désactiver"
+   },
+   
+  {
+    "name" : "Activateur à distance",
+    "type" : "ANOETIQUES",
+    "level" : "1d6 + 1",
+    "utilisable" : "appareil portatif avec un petit nodule amovible",
+    "effet" : "Quand on détache le nodule et qu'on le connecte à n'importe quel autre cypher, l'utilisateur de l'activateur à distance peut activer ce cypher à une portée maximale de 2 km"
+   },
+   
+  {
+    "name" : "Aérosol de camouflage",
+    "type" : "ANOETIQUES",
+    "level" : "1d6 + 1",
+    "utilisable" : "bombe aérosol",
+    "effet" : "Cet aérosol permet de recouvrir rapidement un objet inanimé(ou un groupe d'objets)assez petit pour tenir dans un cube de 3 m de côté et de modifier ainsi sa couleur et sa texture de façon à ce qu'il se fonde parfaitement dans son environnement"
+   },
+   
+  {
+    "name" : "Allumeur photonique",
+    "type" : "OCCULTES",
+    "level" : "1d6 + 4",
+    "utilisable" : "appareil portatif",
+    "effet" : "Émet un rayon vers une cible située à longue portée ou moins. Si le rayon parvient à frapper la cible , il change la façon dont cette dernière interagit avec l'énergie lumineuse pendant une minute. Jusqu'à ce que l'effet se dissipe, il inflige à la cible des dégats qui dépendent du niveau de luminosité auquel elle est exposée : 3 points de dégâts pour une lumière normale, 2 points pour une lumière tamisée et 1 point seulement pour une lumière faible."
+   },
+   
+  {
+    "name" : "Cube de dissonance",
+    "type" : "OCCULTES",
+    "level" : "1d6 + 4",
+    "utilisable" : "appareil complexe",
+    "effet" : "une fois activé, l'appareil émet un bruit subsonique pendant sept heures. À la fin de chaque heure, tout objet métallique à longue portée ou moins de l'appareil subit 4 points de dégâts."
+   }
+]
