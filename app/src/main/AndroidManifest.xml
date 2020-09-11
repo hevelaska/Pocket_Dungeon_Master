@@ -32,10 +32,23 @@
                 android:name="android.support.PARENT_ACTIVITY"
                 android:value=".SearchMonsterActivity" />
         </activity>
+
+        <activity android:name=".CypherActivity">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".SearchCypherActivity" />
+        </activity>
+
+
         <activity android:name=".SearchMonsterActivity">
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
                 android:value=".MainActivity" />
+        </activity>
+        <activity android:name=".SearchCypherActivity">
+            <meta-data
+            android:name="android.support.PARENT_ACTIVITY"
+            android:value=".MainActivity" />
         </activity>
         <activity android:name=".MainActivity">
             <intent-filter>

@@ -2,20 +2,20 @@ package be.hevelaska.pdm;
 
 import android.os.Bundle;
 import android.util.Log;
-import android.view.KeyEvent;
-import android.view.View;
 import android.widget.EditText;
 import android.widget.Toast;
 
+import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
 import java.util.List;
+import java.util.Objects;
 import java.util.stream.Collectors;
 
 import be.hevelaska.pdm.adapters.MonsterAdapter;
-import be.hevelaska.pdm.model.Monster;
+import be.hevelaska.pdm.model.monster.Monster;
 import be.hevelaska.pdm.services.BackendService;
 import retrofit2.Call;
 import retrofit2.Callback;
@@ -40,23 +40,20 @@ public class SearchMonsterActivity extends AppCompatActivity {
 
         recyclerView.setLayoutManager(new LinearLayoutManager(this));
 
-        searchView.setOnKeyListener(new View.OnKeyListener() {
-            @Override
-            public boolean onKey(View view, int i, KeyEvent keyEvent) {
+        searchView.setOnKeyListener((view, i, keyEvent) -> {
 
-                List<Monster>filteredList = oldList
-                            .stream()
-                            .filter(monster -> {
-                                String typedtext = searchView.getText().toString();
-                                return monster.getName().toLowerCase().startsWith(typedtext.toLowerCase());
-                            })
-                            .collect(Collectors.toList());
+            List<Monster>filteredList = oldList
+                        .stream()
+                        .filter(monster -> {
+                            String typedtext = searchView.getText().toString();
+                            return monster.getName().toLowerCase().startsWith(typedtext.toLowerCase());
+                        })
+                        .collect(Collectors.toList());
 
-                monsterAdapter.setMonsterList(filteredList);
-                monsterAdapter.notifyDataSetChanged();
+            monsterAdapter.setMonsterList(filteredList);
+            monsterAdapter.notifyDataSetChanged();
 
-                return false;
-            }
+            return false;
         });
         loadMonster();
     }
@@ -65,7 +62,7 @@ public class SearchMonsterActivity extends AppCompatActivity {
         BackendService.getInstance().getMonsterList()
                 .enqueue(new Callback<List<Monster>>() {
                     @Override
-                    public void onResponse(Call<List<Monster>> call, Response<List<Monster>> response) {
+                    public void onResponse(@NonNull Call<List<Monster>> call, @NonNull Response<List<Monster>> response) {
                         oldList =response.body();
                         monsterAdapter = new MonsterAdapter(response.body());
                         recyclerView.setAdapter(monsterAdapter);
@@ -73,8 +70,8 @@ public class SearchMonsterActivity extends AppCompatActivity {
                     }
 
                     @Override
-                    public void onFailure(Call<List<Monster>> call, Throwable t) {
-                        Log.e("monsters", t.getLocalizedMessage());
+                    public void onFailure(@NonNull Call<List<Monster>> call, @NonNull Throwable t) {
+                        Log.e("monsters", Objects.requireNonNull(t.getLocalizedMessage()));
                         Toast.makeText(getApplicationContext(), "FAIL", Toast.LENGTH_SHORT).show();
                     }
                 });

@@ -2,7 +2,8 @@ package be.hevelaska.pdm.services;
 
 import java.util.List;
 
-import be.hevelaska.pdm.model.Monster;
+import be.hevelaska.pdm.model.cypher.Cypher;
+import be.hevelaska.pdm.model.monster.Monster;
 import retrofit2.Call;
 import retrofit2.Retrofit;
 import retrofit2.converter.gson.GsonConverterFactory;
@@ -26,7 +27,7 @@ public final class BackendService {
     public Call<List<Monster>> getMonsterList(){
         return backend.listMonsters();
     }
-
+    public Call<List<Cypher>> getCypherList(){return  backend.listCyphers();}
 
     public static BackendService getInstance(){
         if(singleton == null){

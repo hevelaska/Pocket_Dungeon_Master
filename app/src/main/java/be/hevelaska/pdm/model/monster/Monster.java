@@ -1,4 +1,4 @@
-package be.hevelaska.pdm.model;
+package be.hevelaska.pdm.model.monster;
 
 import android.os.Parcel;
 import android.os.Parcelable;

@@ -16,7 +16,7 @@
         android:drawableStart="@drawable/ic_search"/>
 
     <Button
-        android:id="@+id/add_monster"
+        android:id="@+id/add_cypher"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginBottom="24dp"
@@ -27,7 +27,7 @@
         android:drawableStart="@drawable/ic_add"/>
 
     <Button
-        android:id="@+id/generate_monster"
+        android:id="@+id/generate_cypher"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="24dp"

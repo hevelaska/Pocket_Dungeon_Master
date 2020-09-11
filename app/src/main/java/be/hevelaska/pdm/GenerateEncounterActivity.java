@@ -14,7 +14,7 @@ import java.util.Objects;
 
 import be.hevelaska.pdm.adapters.EncounterAdapter;
 import be.hevelaska.pdm.databinding.ActivityGenerateEncounterBinding;
-import be.hevelaska.pdm.model.Monster;
+import be.hevelaska.pdm.model.monster.Monster;
 import be.hevelaska.pdm.services.BackendService;
 import retrofit2.Call;
 import retrofit2.Callback;

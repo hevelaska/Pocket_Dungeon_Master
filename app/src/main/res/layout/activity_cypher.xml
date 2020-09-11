@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".CypherActivity">
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:id="@+id/appBarLayout"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar">
+
+        <com.google.android.material.appbar.MaterialToolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            app:title="@string/app_name"
+            style="@style/Widget.MaterialComponents.Toolbar.Primary"/>
+
+    </com.google.android.material.appbar.AppBarLayout>
+
+    <ScrollView
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/appBarLayout">
+
+        <LinearLayout
+            android:padding="8dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+
+            <TextView
+                android:id="@+id/cypherName"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="8dp"
+                android:padding="4dp"
+                android:drawablePadding="16dp"
+                android:textSize="32sp"
+                android:textStyle="bold"/>
+
+            <com.lockwood.compound.CompoundTextView
+                android:id="@+id/cypherType"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="8dp"
+                android:padding="4dp"
+                android:textSize="19sp"
+                app:drawableGravity="top"
+                app:drawablePadding="16dp"
+                app:drawableStart="@drawable/ic_modification" />
+
+            <com.lockwood.compound.CompoundTextView
+                android:id="@+id/cypherLevel"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="8dp"
+                android:padding="4dp"
+                app:drawablePadding="16dp"
+                android:textSize="19sp"
+                app:drawableStart="@drawable/ic_level_light"
+                app:drawableGravity="top"/>
+
+            <com.lockwood.compound.CompoundTextView
+                android:id="@+id/utilisable"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/use_cypher"
+                app:drawableStart="@drawable/ic_use"
+                android:layout_margin="8dp"
+                android:padding="4dp"
+                app:drawablePadding="16dp"
+                android:textSize="19sp"
+                app:drawableGravity="top"/>
+
+
+
+            <com.lockwood.compound.CompoundTextView
+                android:id="@+id/effet"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:drawableStart="@drawable/ic_motive"
+                android:layout_margin="8dp"
+                android:padding="4dp"
+                app:drawablePadding="16dp"
+                android:textSize="19sp"
+                app:drawableGravity="top"/>
+
+
+        </LinearLayout>
+    </ScrollView>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

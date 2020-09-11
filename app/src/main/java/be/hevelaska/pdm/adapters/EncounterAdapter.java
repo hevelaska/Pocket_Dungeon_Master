@@ -18,7 +18,7 @@ import java.util.Locale;
 
 import be.hevelaska.pdm.MonsterActivity;
 import be.hevelaska.pdm.R;
-import be.hevelaska.pdm.model.Monster;
+import be.hevelaska.pdm.model.monster.Monster;
 
 public class EncounterAdapter extends RecyclerView.Adapter<EncounterAdapter.MonsterViewHolder> {
     private List<Pair<Integer,Monster>> monsterList;

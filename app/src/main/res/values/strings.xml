@@ -2,6 +2,7 @@
     <string name="app_name">Pocket Dungeon Master</string>
     <string name="tab_monsters">Monsters</string>
     <string name="search_monster">Search monsters</string>
+    <string name="search_cypher">Search cyphers</string>
     <string name="tab_treasure">Treasure</string>
     <string name="search">Search</string>
     <string name="generate">Generate</string>
@@ -10,6 +11,8 @@
     <string name="monster_description"> monster description</string>
     <string name="default_level">1</string>
     <string name="name_monster">name monster</string>
+    <string name="name_cypher"> name cypher</string>
+    <string name="use_cypher"> utilisable</string>
     <string name="level_prompt">Choose a level</string>
     <string name="Cancel_btn">Cancel</string>
     <string name="amount_of_monster">1×</string>

@@ -1,15 +1,16 @@
 package be.hevelaska.pdm;
 
-import androidx.appcompat.app.AppCompatActivity;
-
 import android.content.Intent;
 import android.os.Bundle;
-import android.util.Log;
+
+import androidx.appcompat.app.AppCompatActivity;
 
 import com.bumptech.glide.Glide;
 
+import java.util.Objects;
+
 import be.hevelaska.pdm.databinding.ActivityMonsterBinding;
-import be.hevelaska.pdm.model.Monster;
+import be.hevelaska.pdm.model.monster.Monster;
 
 public class MonsterActivity extends AppCompatActivity {
 
@@ -25,10 +26,10 @@ public class MonsterActivity extends AppCompatActivity {
         Monster monster = intent.getParcelableExtra("monster");
 
         setSupportActionBar(binding.toolbar);
-        getSupportActionBar().setDisplayHomeAsUpEnabled(true);
+        Objects.requireNonNull(getSupportActionBar()).setDisplayHomeAsUpEnabled(true);
 
 
-
+        assert monster != null;
         binding.monsterName.setText(monster.getName());
         binding.monsterArmor.setText(String.valueOf(monster.getArmor()));
         binding.monsterCombat.setText(monster.getCombat());
