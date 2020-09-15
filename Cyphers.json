@@ -5,7 +5,7 @@
     "level" : "1d6 + 1",
     "utilisable" : "petit nodule en synth",
     "effet" : "Quand on le fixe sur un autre cypher ou sur un artefact, l'activateur à mouvement active cet appareil si quoi que ce soit de plus gros qu'un petit chien passe à distance immédiate. Une fois activé, il est impossible de le désactiver"
-   },
+  },
    
   {
     "name" : "Activateur à distance",
@@ -13,7 +13,7 @@
     "level" : "1d6 + 1",
     "utilisable" : "appareil portatif avec un petit nodule amovible",
     "effet" : "Quand on détache le nodule et qu'on le connecte à n'importe quel autre cypher, l'utilisateur de l'activateur à distance peut activer ce cypher à une portée maximale de 2 km"
-   },
+  },
    
   {
     "name" : "Aérosol de camouflage",
@@ -21,7 +21,7 @@
     "level" : "1d6 + 1",
     "utilisable" : "bombe aérosol",
     "effet" : "Cet aérosol permet de recouvrir rapidement un objet inanimé(ou un groupe d'objets)assez petit pour tenir dans un cube de 3 m de côté et de modifier ainsi sa couleur et sa texture de façon à ce qu'il se fonde parfaitement dans son environnement"
-   },
+  },
    
   {
     "name" : "Allumeur photonique",
@@ -29,7 +29,7 @@
     "level" : "1d6 + 4",
     "utilisable" : "appareil portatif",
     "effet" : "Émet un rayon vers une cible située à longue portée ou moins. Si le rayon parvient à frapper la cible , il change la façon dont cette dernière interagit avec l'énergie lumineuse pendant une minute. Jusqu'à ce que l'effet se dissipe, il inflige à la cible des dégats qui dépendent du niveau de luminosité auquel elle est exposée : 3 points de dégâts pour une lumière normale, 2 points pour une lumière tamisée et 1 point seulement pour une lumière faible."
-   },
+  },
    
   {
     "name" : "Cube de dissonance",
@@ -37,5 +37,176 @@
     "level" : "1d6 + 4",
     "utilisable" : "appareil complexe",
     "effet" : "une fois activé, l'appareil émet un bruit subsonique pendant sept heures. À la fin de chaque heure, tout objet métallique à longue portée ou moins de l'appareil subit 4 points de dégâts."
-   }
+  },
+
+  {
+    "name" : "Access Glasses",
+    "type" : "ANOETIQUES",
+    "level" : "1d6 + 1",
+    "utilisable" : "Goggles plus gloves or rings",
+    "effet" : "The user can see through up to half an inch of solid material and can pass his hands and anything his hands are holding through that solid matter. Once the area to be looked and passed through is chosen—about 18 inches by 18 inches (46 cm by 46 cm)—a new area cannot be chosen. However, the effect lasts for an hour."
+  },
+
+  {
+    "name" : "Access Token",
+    "type" : "ANOETIQUES",
+    "level" : "1d6 ",
+    "utilisable" : "Tiny metal device",
+    "effet" : " Automatically unlocks one locked door or container within short range."
+  },
+
+  {
+    "name" : "Adamant Foam",
+    "type" : "ANOETIQUES",
+    "level" : "1d6 + 1",
+    "utilisable" : "Small spray canister",
+    "effet" : "The foam in this canister is extraordinarily light—almost weightless, lighter than a soap bubble—and virtually invisible. It’s possible, in fact, to have this foam in your hand and not even realize it. And yet the foam, which dries on contact with the air, is superstrong. While pliable, it’s as unbreakable as steel mesh. The canister has enough foam to coat an area 6 feet by 6 feet (2 m by 2 m) with a thin layer. Although this foam has many uses, if sprayed on a living target, that target has +2 to Armor. Adamant foam disintegrates after 28 hours."
+  },
+  
+   {
+    "name" : "Airfins",
+    "type" : "ANOETIQUES",
+    "level" : "1d6 ",
+    "utilisable" : "Long gloves with forearm fins",
+    "effet" : "Through gravity manipulation, the wearer can swim through the air as if it were water for one hour. Training or specialization in swimming aids in movement."
+  },
+
+  {
+    "name" : "Alarm Worm",
+    "type" : "ANOETIQUES",
+    "level" : "1d6 ",
+    "utilisable" : "A bloated worm about 1 foot (0.3 m) long",
+    "effet" : "Six minutes after activation, the worm inflates and excretes 1d6 wet, shuddering eggs at a place the user designates. After laying the eggs, the worm slithers back to the user and coils around one of his limbs, gripping tightly. For the next seven hours, whenever a creature approaches within 5 feet (2 m) of the eggs, the worm tightens and exudes a thick orange slime that reeks of rotten meat. When the effect ends, the worm relaxes its grip, falls, and expires messily. "
+  },
+
+  {
+    "name" : "Amplification Parasite",
+    "type" : "ANOETIQUES",
+    "level" : "1d6 + 4",
+    "utilisable" : "Internal: Living fish, beetle, or worm that must be ingested",
+    "effet" : " Upon eating the parasite, the user chooses one stat and the GM chooses a different stat. The difficulty of any roll related to the user’s chosen stat is reduced by two steps, and the difficulty of any roll involving the GM’s chosen stat is increased by two steps. The parasite dies after 1d6 hours, and the effect ends when the user violently expels it from her body"
+  },
+
+  {
+    "name" : "Analysis Daemon",
+    "type" : "ANOETIQUES",
+    "level" : "1",
+    "utilisable" : "Small handheld device, crystal",
+    "effet" : "The user examines a cypher or an artifact and then taps into the datasphere. The user automatically identifies the device."
+  },
+
+  {
+    "name" : "Analysis Scanner",
+    "type" : "OCCULTES",
+    "level" : "1d10",
+    "utilisable" : "Handheld device",
+    "effet" : "This device scans and records everything within short range for one round and then conveys the level and nature of all creatures, objects, and energy sources it scanned. This information can be accessed for 28 hours after the scan."
+  },
+
+  {
+    "name" : "Anchor Stone",
+    "type" : "ANOETIQUES",
+    "level" : "1d6 ",
+    "utilisable" : "Lump of oddly shaped stone or metal",
+    "effet" : "Submerging the device in water causes it to swell into a boulder about 5 feet (2 m) in diameter that weighs 500 pounds (227 kg)."
+  },
+
+  {
+    "name" : "Antipathy Field Emitter",
+    "type" : "OCCULTES",
+    "level" : "1d6 ",
+    "utilisable" : "Small handheld device, node that can be attached to a weapon or armor",
+    "effet" : "When activated, the device emits an invisible energy field for one hour. The field extends out to immediate range. Any living creature in the field other than the user experiences nausea and physical discomfort. The difficulty of all tasks performed by an affected creature is modified by one step to its detriment."
+  },
+
+  {
+    "name" : "Anxiety Engine",
+    "type" : "ANOETIQUES",
+    "level" : "1d6 + 2",
+    "utilisable" : "White sphere with a glowing red orb ",
+    "effet" : " Fills a 5-foot (2 m) cube with a cloud of shadowy mist that lingers for one hour. The mist cannot be dispersed and remains despite the environmental conditions. Whenever a creature moves to within a short distance of the mist and can see it, the creature sees the cloud transform into something terrifying and horrific, its worst nightmares come to life. While the creature remains within a short distance of the cloud, the difficulty for all its tasks is modified by one step to its detriment."
+  },
+
+  {
+    "name" : "Armor Patch",
+    "type" : "ANOETIQUES",
+    "level" : "1d6 ",
+    "utilisable" : "Sewn-on patch, self-stick fabric, metallic swatch",
+    "effet" : "After being applied to armor of any kind, this patch activates when firmly slapped, sending tiny nanowires through the armor’s material to provide greater benefit.(01–50 Nanowires add a repellent layer to the material. Gain +1 to Armor against ranged, piercing, fire, or beam attacks for 28 hours.)(51–75 Nanowires create greater flexibility in the material. Gain a +2 bonus to Speed defense rolls for 28 hours.)(76–00 Nanowires create a tough outer coating to the material. Gain a +2 bonus to Might defense rolls for 28 hours).Action to attach to armor. Activation can be combined with another action. "
+  },
+
+  {
+    "name" : "Artificial Leech",
+    "type" : "OCCULTES",
+    "level" : "1d6 ",
+    "utilisable" : "Handheld device",
+    "effet" : "When used at the site of an infected or poisoned wound, the device draws out as much of the infection or poison as it can without injuring the surrounding tissue. The device restores a number of points equal to the cypher level to the user’s Might Pool."
+  },
+
+  {
+    "name" : "Atmospheric Hyperskin",
+    "type" : "OCCULTES",
+    "level" : "1d6 ",
+    "utilisable" : "Adhesive patch of clear or fleshcolored substrate, temporary tattoo, sticky bundle of bare nanowires",
+    "effet" : "When applied to any part of the body, nanowires penetrate the surface of the skin, allowing the user to sense a wider-thannormal range of atmospheric, geologic, and aqueous pressures, sensations, and vibrations. The user becomes trained in geology, biology, climatology, and perception for 28 hours. "
+  },
+
+  {
+    "name" : "Awareness Enhancer",
+    "type" : "ANOETIQUES",
+    "level" : "1d6 ",
+    "utilisable" : "Headband",
+    "effet" : "For the next 28 hours, the user is more aware of his surroundings through telepathic and telekinetic means. He can feel objects move within short range and can mentally hear thinking beings within long range. This is an asset for all perception and initiative tasks."
+  },
+
+  {
+    "name" : "Battle Vapor",
+    "type" : "ANOETIQUES",
+    "level" : "1d6",
+    "utilisable" : "Small metal canister",
+    "effet" : "Releases faint red vapor that fills an area within long distance within two rounds. The vapor persists for ten minutes unless natural conditions (such as wind) suggest otherwise. All energy weapons used in the area inflict 2 additional points of damage as the vapor intensifies them."
+  },
+
+  {
+    "name" : "",
+    "type" : "OCCULTES",
+    "level" : "1d6 + 4",
+    "utilisable" : "",
+    "effet" : ""
+  },
+
+  {
+    "name" : "",
+    "type" : "OCCULTES",
+    "level" : "1d6 + 4",
+    "utilisable" : "",
+    "effet" : ""
+  },
+
+  {
+    "name" : "",
+    "type" : "OCCULTES",
+    "level" : "1d6 + 4",
+    "utilisable" : "",
+    "effet" : ""
+  },
+
+  {
+    "name" : "",
+    "type" : "OCCULTES",
+    "level" : "1d6 + 4",
+    "utilisable" : "",
+    "effet" : ""
+  },
+
+  {
+    "name" : "",
+    "type" : "OCCULTES",
+    "level" : "1d6 + 4",
+    "utilisable" : "",
+    "effet" : ""
+  },
+  
+
+
 ]
