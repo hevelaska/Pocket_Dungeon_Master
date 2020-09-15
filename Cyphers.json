@@ -168,45 +168,115 @@
   },
 
   {
-    "name" : "",
-    "type" : "OCCULTES",
-    "level" : "1d6 + 4",
-    "utilisable" : "",
-    "effet" : ""
+    "name" : "Beauty Mask",
+    "type" : "ANOETIQUES",
+    "level" : "1d6",
+    "utilisable" : "Paste",
+    "effet" : " Once applied to the user’s face and left to dry for ten minutes, this paste removes blemishes and wrinkles. The user appears much younger and more attractive. This effect is permanent."
   },
 
   {
-    "name" : "",
-    "type" : "OCCULTES",
-    "level" : "1d6 + 4",
-    "utilisable" : "",
-    "effet" : ""
+    "name" : "Bezoar Discharge",
+    "type" : "ANOETIQUES",
+    "level" : "1d6",
+    "utilisable" : "Explosive device (thrown, short range) or handheld projector (long range)",
+    "effet" : "Explodes in an immediate radius, giving everything and everyone within it a sticky, powdery coating that provides +1 to Armor against poison,chemical, and fire damage for 28 hours."
   },
 
   {
-    "name" : "",
+    "name" : "Biofeedback Glove",
     "type" : "OCCULTES",
-    "level" : "1d6 + 4",
-    "utilisable" : "",
-    "effet" : ""
+    "level" : "1d6",
+    "utilisable" : "Single glove made of synth and nanowires",
+    "effet" : "For the next hour, each time the wearer uses the gloved hand to perform an action, the glove sends a biofeedback response regarding the action. After wearing the glove for one hour, the wearer may choose one of those actions (such as wielding a weapon, crafting, working with numenera devices, and so on). She becomes temporarily trained in that skill. For the next 28 hours, the difficulty of all tasks related to that skill is reduced by one step."
   },
 
   {
-    "name" : "",
-    "type" : "OCCULTES",
-    "level" : "1d6 + 4",
-    "utilisable" : "",
-    "effet" : ""
+    "name" : "Biological Transpiercer",
+    "type" : "ANOETIQUES",
+    "level" : "1d6 + 2",
+    "utilisable" : "Biological needle or spike that is inserted under the skin",
+    "effet" : " Once inserted beneath the user’s skin, the transpiercer releases a slow-acting biological compound that begins to mix with the user’s blood, causing one of the following effects: (01–04 Allows the user to see in the dark for one hour)(05–08 Causes the user to go out of phase for one hour)(09–12 Increases Might Pool by 5 for one hour)(13–16 Increases Speed Pool by 5 for one hour)(17–20 Increases Intellect Pool by 5 for one hour)(21–25 Restores a number of Might Pool points equal to cypher level)(26–30 Restores a number of Speed Pool points equal to cypher level)(31–35 Restores a number of Intellect Pool points equal to cypher level)(36–45 Increases Might Edge by 1 for one hour)(46–55 Increases Speed Edge by 1 for one hour)(56–65 Increases Intellect Edge by 1 for one hour)(66–75 Creates a random beneficial mutation for one hour )(76–85 Creates a random powerful mutation for one hour)(86–95 Creates a random distinctive mutation for one hour)(96–00 Creates a random cosmetic mutation for one hour)"
   },
 
   {
-    "name" : "",
-    "type" : "OCCULTES",
-    "level" : "1d6 + 4",
-    "utilisable" : "",
-    "effet" : ""
+    "name" : "Biometric Reference",
+    "type" : "ANOETIQUES",
+    "level" : "1",
+    "utilisable" : "Small handheld device, crystal",
+    "effet" : "Activating the device allows the user to connect with the datasphere to identify one creature he can see. The user learns the creature’s level, motivations, health, damage inflicted, armor, and movement, plus a detail about how it fights in combat."
   },
+
+  {
+    "name" : "Biomorph",
+    "type" : "ANOETIQUES",
+    "level" : "1d6 + 2",
+    "utilisable" : "Injector",
+    "effet" : "Causes the user to gain a mutation. Roll to determine the type of mutation: (01–20 Harmful mutation)(21–40 Cosmetic mutation)(41–60 Beneficial mutation)(61–80 Distinctive mutation)(81–00 Powerful mutation)"
+  },
+
+  {
+    "name" : "Blood Boiler",
+    "type" : "ANOETIQUES",
+    "level" : "1d6 + 1",
+    "utilisable" : "Internal( Pill, ingestible liquid)",
+    "effet" : "Causes an increase in blood flow to any stimulated body parts. Adds 1 to Might Edge for one hour. "
+  },
+
+  {
+    "name" : "Blood Magnet",
+    "type" : "ANOETIQUES",
+    "level" : "1d6",
+    "utilisable" : "Syringe",
+    "effet" : "The user injects the biological magnet into his own blood or that of another living creature within close range. The hemoglobin of the injected creature gains strong ferromagnetic properties for one hour. Roll d100: (01–50 Attracts metallic objects to the creature (can move an object up to the weight of the creature within long range))(51–75 Repels metallic objects from the creature (can move an object up to the weight of the creature within long range))(76–00 Causes the creature’s blood to become overly magnetized, decreasing the flow of oxygen to the cells (does damage equal to the cypher level))"
+  },
+
+  {
+    "name" : "Bloom (Fireflower)",
+    "type" : "ANOETIQUES",
+    "level" : "1d6 + 4",
+    "utilisable" : "Ceramic, glass, or other breakable material in the shape of a flower or seed pod with a fuse stem (lit and then thrown or launched, long-range) ",
+    "effet" : "Ten seconds after the fuse is lit, the device explodes, sending shards of red-hot glass out into the pattern of a flower. Any living creature that comes into contact with falling or spraying shards suffers burn damage equal to the cypher level. "
+  },
+
+  {
+    "name" : "Bloom (Serpent)",
+    "type" : "ANOETIQUES",
+    "level" : "1d6 + 2",
+    "utilisable" : "Ceramic, glass, or other breakable material in the shape of a coiled snake with a fuse tongue (lit and then thrown or launched, long-range)",
+    "effet" : "Ten seconds after the fuse is lit, the device explodes, sending out electrified wireworms in the pattern of a long, gyrating snake. As the snake pattern slides through the air, it explodes a second time, sending the electrified wireworms out in a wider pattern. Any living creature that comes into contact with the wireworms is electrified, taking damage equal to the cypher level and becoming dazed for one round, during which time the difficulty of all tasks it performs is modified by one step to its detriment."
+  },
+
+  {
+    "name" : "Bloom (Spore)",
+    "type" : "ANOETIQUES",
+    "level" : "1d6 + 4",
+    "utilisable" : "Moss-wrapped ball filled with small pressure-activated detonator and propellant spores",
+    "effet" : " Ten seconds after the ball is firmly squeezed (to activate the detonator), the device explodes, sending spores out in foliage patterns. Any living creature that breathes in the falling or spraying spores takes damage equal to the cypher level. "
+  },
+
+  {
+    "name" : "Blue Crystal",
+    "type" : "ANOETIQUES",
+    "level" : "1d6 + 1",
+    "utilisable" : "Small blue crystal",
+    "effet" : "When one gazes through a blue crystal, for a brief moment she can view a spot corresponding to her current position in a parallel universe. Moreover, the view is set a few moments in the future. However, since the crystal shows a parallel universe, the future seen may or may not be an accurate reflection of her reality. The user, then, sees a possible future. Normally, there is about a 30% chance that the glimpse is entirely accurate and a 30% chance that it is partially accurate, but these numbers depend on the circumstances."
+  },
+
+  {
+    "name" : "Body Enhancer",
+    "type" : "OCCULTES",
+    "level" : "1d6",
+    "utilisable" : "Tube of malleable material.",
+    "effet" : "Adjusts to match the user’s skin color and temperature, can be shaped into any form, and affixes itself to the user’s body for up to two hours. Single action to shape and affix. "
+  },
+
+  {
+    "name" : "Bone Dress",
+    "type" : "OCCULTES",
+    "level" : "1d6",
+    "utilisable" : "Squeezable tube filled with liquefied bone ",
+    "effet" : "The material can be squeezed into a pattern of protection around anything, living or nonliving. Within a few seconds after application, the bone hardens in the established pattern, providing a cage of armor around the selected object or creature. The cage is malleable, allowing movement, and offers +1 to Armor for one hour. Application takes ten seconds or one round. "
+  }
   
-
-
 ]
